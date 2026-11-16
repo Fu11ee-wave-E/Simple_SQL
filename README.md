@@ -14,7 +14,7 @@
 
 ## 🛠️ Tech Stack
 - **Database Engine:** Google BigQuery (SQL)
-- **Environment:** Google Colab / Jupyter Notebooks
+- **Environment:**  Can be adapted to Google Colab / Jupyter Notebooks
 - **Libraries:** `google-cloud-bigquery`, `pandas`, `matplotlib`
 
 
@@ -43,7 +43,12 @@ FROM YearlyGlobalAvg
 ORDER BY year ASC;
 ```
 
-📊 Visualization
+📊 Visualization 1
+<br><br>
+<p align="left">
+  <img src="Figures/simple_sql_query_1.png" width="800">
+</p>
+<br><br>
 
 ## 💻 SQL Query 2 : Identifying Extreme Weather Hotspots
 The following query joins the weather logs with the stations table to see which countries experienced the highest number of extreme heat days (days over 38°C / 100°F).
@@ -61,6 +66,10 @@ GROUP BY meta.country, station_name
 HAVING extreme_heat_days > 5
 ORDER BY extreme_heat_days DESC;
 ```
-📊 Visualization
-
+📊 Visualization 2
+<br><br>
+<p align="left">
+  <img src="Figures/simple_sql_query_2.png" width="800">
+</p>
+<br><br>
 </div>
